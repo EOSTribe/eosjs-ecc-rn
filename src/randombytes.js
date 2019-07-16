@@ -1,7 +1,7 @@
+const CryptoJS = require('crypto-js');
+
 function getRandomValues(byteArray) {
-    for (let i = 0; i < byteArray.length; i++) {
-      byteArray[i] = Math.floor(256 * Math.random());
-    }
+    byteArray = CryptoJS.lib.WordArray.random(byteArray.length);
 };
 function randomBytes(size, cb) {
     // phantomjs needs to throw

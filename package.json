@@ -1,6 +1,6 @@
 {
   "name": "eosjs-ecc-rn",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "Elliptic curve cryptography functions - react native version",
   "keywords": "ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption, React Native",
   "author": "gamexcoin",
@@ -41,8 +41,7 @@
     "buffer": "^5.2.1",
     "bytebuffer": "^5.0.1",
     "crypto-js": "^3.1.9-1",
-    "ecurve": "^1.0.5",
-    "stream": "^0.0.2"
+    "ecurve": "^1.0.5"
   },
   "license": "MIT",
   "devDependencies": {
