@@ -19,7 +19,7 @@ const ecc = require('eosjs-ecc-rn')
 
 # Include
 
--   Install with: `npm install eosjs-ecc-rn`
+-   Install with: `yarn add eosjs-ecc-rn`
 -   Html script tag, see [releases](https://github.com/EOSIO/eosjs-ecc-rn/releases) for the correct **version** and its matching script **integrity** hash.
 
 ```html
@@ -49,6 +49,7 @@ const ecc = require('eosjs-ecc-rn')
 ### Table of Contents
 
 -   [wif](#wif)
+-   [pubkey](#pubkey)
 -   [ecc](#ecc)
     -   [initialize](#initialize)
     -   [unsafeRandomKey](#unsaferandomkey)
@@ -91,6 +92,12 @@ const ecc = require('eosjs-ecc-rn')
 ## wif
 
 [Wallet Import Format](https://en.bitcoin.it/wiki/Wallet_import_format)
+
+Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+## pubkey
+
+EOSKey..
 
 Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
@@ -336,8 +343,8 @@ pubkey = PrivateKey.fromString(privateWif).toPublic().toString()
 ```bash
 git clone https://github.com/EOSIO/eosjs-ecc-rn.git
 cd eosjs-ecc-rn
-npm install
-npm run build_browser
+yarn
+yarn add build_browser
 # builds: ./dist/eosjs-ecc-rn.js
 # Verify release hash
 ```
